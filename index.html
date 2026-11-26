@@ -20,5 +20,92 @@
 
 <body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 transition-colors duration-300 font-sans">
 
+    <!-- 1. NAVBAR SECTION -->
+    <nav class="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+
+            <!-- Brand / Logo Startup -->
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600">
+                    TechNova.AI
+                </span>
+            </div>
+
+            <!-- Navigasi Desktop -->
+            <div class="hidden md:flex items-center space-x-8 font-medium text-slate-600 dark:text-slate-300">
+                <a href="#hero" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">
+                    Beranda
+                </a>
+
+                <a href="#features" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">
+                    Fitur
+                </a>
+
+                <a href="#pricing" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">
+                    Harga
+                </a>
+            </div>
+
+            <!-- Tombol Dark Mode dan CTA -->
+            <div class="flex items-center space-x-4">
+
+                <!-- Dark Mode Toggle -->
+                <button
+                    onclick="document.documentElement.classList.toggle('dark')"
+                    class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition"
+                    aria-label="Toggle Dark Mode">
+
+                    <span class="dark:hidden">🌙</span>
+                    <span class="hidden dark:inline">☀️</span>
+
+                </button>
+
+                <!-- Tombol Coba Gratis -->
+                <a href="#pricing"
+                    class="hidden sm:inline-block px-4 py-2 text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-md transition">
+                    Coba Gratis
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    
+    <!-- 2. HERO SECTION -->
+    <section id="hero" class="py-20 lg:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+
+        <span class="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 bg-indigo-100 dark:bg-indigo-900/60 rounded-full border border-indigo-200 dark:border-indigo-800">
+            Generasi Baru Kecerdasan Buatan
+        </span>
+
+        <h1 class="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+            Otomatiskan Pekerjaanmu dengan
+            <br class="hidden sm:inline">
+
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                Teknologi TechNova AI
+            </span>
+        </h1>
+
+        <p class="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+            Tingkatkan produktivitas tim hingga 10x lipat menggunakan platform asisten berbasis AI yang cepat, aman, dan mudah diintegrasikan.
+        </p>
+
+        <!-- Call To Action (CTA) -->
+        <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+
+            <a href="#pricing"
+                class="w-full sm:w-auto px-8 py-3.5 text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-lg hover:shadow-indigo-500/25 transition duration-200">
+                Get Started
+            </a>
+
+            <a href="#features"
+                class="w-full sm:w-auto px-8 py-3.5 text-base font-medium text-slate-700 dark:text-slate-200 bg-slate-200/60 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-xl transition duration-200">
+                Pelajari Fitur
+            </a>
+
+        </div>
+    </section>
+    
 </body>
 </html>
